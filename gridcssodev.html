@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-image:linear-gradient(to right, purple,aquamarine);
+            background-repeat: no-repeat;
+            height: 100vh;
+            
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+            display: block;
+            margin: auto;
+           
+        }
+
+        .grid-container{
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(3,2fr);
+            position: relative;
+            top: 50px;
+            left: 70px;
+        }
+
+        .card{
+            width: 400px;
+            height: 400px;
+            background-color: aliceblue;
+            border: 2px solid rgb(247, 243, 243);
+            border-radius: 10px;
+           transition: transform 0.2 ease;
+        }
+
+    
+
+        .card:hover{
+            transform:scale(1.1);
+            background-color: rgb(218, 114, 192);
+            
+        }
+
+        p{
+            font-size: 20px;
+            text-align: center;
+            
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        .card button{
+            border-radius:5px ;
+            background-color: rgb(51, 49, 49);
+            color: aliceblue;
+            width: 150px;
+            height: 40px;
+            font-size: 20px;
+            display: block;
+            margin: auto;
+        }
+
+        
+        .card img,p,h2,button{
+            position: relative;
+            top: 40px;
+            line-height: 40px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="card">
+            <img src="./html5-1841458_1280.png" alt="">
+            <h2>HTML 5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium.</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="card">
+            <img src="./css3-1841590_1280.png" alt="">
+            <h2>CSS 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores.</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="card">
+            <img src="./javascript-736400_1280.png" alt="">
+            <h2>JavaScript</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores.</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="card">
+            <img src="./1024px-Sass_Logo_Color.svg.png" alt="">
+            <h2>Sass</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores.</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="card">
+            <img src="./jquery-vertical.svg" alt="">
+            <h2>jQuery</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores.</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="card">
+            <img src="./React-icon.svg" alt="">
+            <h2>React</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores.</p>
+            <button>Read More</button>
+        </div>
+    </div>
+</body>
+
+</html>
